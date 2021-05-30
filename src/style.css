@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+body{
+    background-color: #99e4bb;
+}
+
+.container{
+    border-radius: 10px;
+    background-color: #99e4bb;
+    color: #edfaff;
+    font-family: 'sans-serif';
+    font-size: 30px;
+}

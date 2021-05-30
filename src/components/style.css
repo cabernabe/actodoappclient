@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+.mdl-head{
+    background-color: #99e4bb;
+}
+
+.mdl-body{
+    font-family: 'sans-serif';
+
+}
+
+.mdl-foot{
+
+}
+
+.title{
+    font-family: 'sans-serif';
+    font-size: 70px;
+    font-style: bold;
+}
+
+.in, .bttn, .edt, .del{
+    font-size: 30px;
+}
