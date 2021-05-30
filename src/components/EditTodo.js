@@ -47,8 +47,8 @@ const EditTodo = ({todo}) => {
         e.preventDefault();
         try {
             const body = {todo_name, description, date, status};
-            const id = await getId()
-            const response = await fetch(`https://abstracttodoappserver.herokuapp.com/${id}`,{
+  
+            const response = await fetch(`https://abstracttodoappserver.herokuapp.com/${todo.todo_id}`,{
 
                 method: "PUT",
                 headers: {"Content-Type":  "application/json"},
@@ -61,24 +61,7 @@ const EditTodo = ({todo}) => {
         }
     }
 
-    async function getId(){
-      try {
-          
-          const response = await fetch('https://abstracttodoappserver.herokuapp.com/dashboard',{
-              method: "GET",
-              headers: {token: localStorage.token}
-          })
-
-          const parseResponse = await response.json();
-
-
-          return parseResponse.user_id
-
-      } catch (err) {
-          console.error(err.message);
-      }
-  }
-
+    
     return(
         <Fragment>
             {/* <!-- Button to Open the Modal --> */}
