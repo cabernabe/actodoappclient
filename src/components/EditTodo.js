@@ -41,7 +41,11 @@ const EditTodo = ({todo}) => {
         }
     }
 
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 180312194169be2166868ed435b7ed0f8959a1c6
     return(
         <Fragment>
             {/* <!-- Button to Open the Modal --> */}
